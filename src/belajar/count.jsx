@@ -1,7 +1,7 @@
 //belajar usestate dulu akwokwwok :v
 
 import { useState } from 'react'
-import './App'
+import '../App'
 
 function Count (){
     const [Count, setCount] = useState(0);
