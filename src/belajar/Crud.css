@@ -1,12 +1,16 @@
 /* App.css */
 
+/* Dark mode theme */
+
 /* Style for the main chat container */
 .chat-container {
     width: 400px;
     margin: auto;
     padding: 20px;
-    border: 5px solid #ccc;
+    border: 5px solid #333; /* Dark border */
     border-radius: 8px;
+    background-color: #222; /* Dark background */
+    color: #fff; /* White text */
 }
 
 /* Style for the chat messages */
@@ -14,14 +18,24 @@
     margin-bottom: 10px;
     padding: 8px;
     border-radius: 4px;
-    background-color: #f2f2f2;
+    text-align: left; /* Align text to the left */
 }
 
-/* Style for the response messages */
+/* Style for the response messages text */
 .response-message {
     margin-left: 20px;
     font-style: italic;
     color: #888;
+}
+
+/* Style for the bot messages text */
+.bot-message .message-text {
+    font-style: italic !important; /* Italicize bot messages */
+}
+
+/* Style for the user messages text */
+.user-message .message-text {
+    font-style: Inter !important;
 }
 
 /* Style for the input field and button */
@@ -30,22 +44,23 @@
 }
 
 .input-container input[type="text"] {
-    width: 70%;
+    width: calc(70% - 12px); /* Adjusted width to accommodate button */
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    background-color: #333; /* Dark input field background */
+    color: #fff; /* White text */
 }
 
 .input-container button {
     padding: 8px 12px;
-    margin-left: 10px;
     border: none;
     border-radius: 4px;
-    background-color: #007bff;
-    color: #fff;
+    background-color: #007bff; /* Blue button color */
+    color: #fff; /* White text */
     cursor: pointer;
 }
 
 .input-container button:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Darker blue on hover */
 }

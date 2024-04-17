@@ -25,12 +25,12 @@ export const Crud = () => {
         <div className="chat-container">
             <h1>Chat App</h1>
             <div className="chat-message">
-                <h2>Hello can i help you</h2>
+                <p className='bot-message'>Hello can i help you</p>
                 {message.map((message, index) => (
                     <div key={index}>
-                        <p>{message}</p>
+                        <p className='user-message'>{message}</p>
                         {/* Use unique IDs for each response message */}
-                        <p id={`responseMessage-${index}`}>Sedang mengetik...</p>
+                        <p className='bot-message' id={`responseMessage-${index}`}>Sedang mengetik...</p>
                     </div>
                 ))}
             </div>
