@@ -29,7 +29,6 @@ export const Crud = () => {
                 {message.map((message, index) => (
                     <div key={index}>
                         <p className='user-message'>{message}</p>
-                        {/* Use unique IDs for each response message */}
                         <p className='bot-message' id={`responseMessage-${index}`}>Sedang mengetik...</p>
                     </div>
                 ))}
